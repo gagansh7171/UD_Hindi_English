@@ -13,16 +13,16 @@ import argparse
 
 import tweepy
 
-__version__ = '2.0'
+#__version__ = '2.0'
 
 
 consumer_key = ''
 consumer_secret = ''
 access_key = ''
 access_secret = ''
+bearer_token = ''
 
-auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
-auth.set_access_token(access_key, access_secret)
+auth = tweepy.Client(bearer_token)
 twitter = tweepy.API(auth)
 
 
