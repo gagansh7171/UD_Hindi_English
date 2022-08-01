@@ -13,7 +13,7 @@ import argparse
 
 import tweepy
 
-#__version__ = '2.0'
+__version__ = '2.0'
 
 
 consumer_key = ''
